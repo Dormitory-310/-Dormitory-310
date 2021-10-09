@@ -1,0 +1,57 @@
+{
+  "name": "call-app",
+  "version": "1.0.0",
+  "description": "通用的唤起app的库",
+  "scripts": {
+    "cz": "git cz -a",
+    "test": "jest --coverage",
+    "lint": "commander-tools run lint",
+    "fix": "commander-tools run lint --fix",
+    "staged": "commander-tools run lint --staged",
+    "staged-fix": "commander-tools run lint --staged --fix",
+    "dev": "commander-tools run dev",
+    "compile": "commander-tools run compile",
+    "dist": "commander-tools run dist",
+    "analyz": "commander-tools run dist --analyz",
+    "build": "commander-tools run build",
+    "pub": "commander-tools run pub",
+    "pub-beta": "commander-tools run pub-beta",
+    "unpub": "commander-tools run unpub",
+    "doc": "commander-tools run doc",
+    "build-doc": "commander-tools run build-doc",
+    "doc-upload": "commander-tools run doc-upload"
+  },
+  "main": "index.js",
+  "keywords": [
+    "vue",
+    "react",
+    "npm",
+    "import"
+  ],
+  "author": "",
+  "license": "ISC",
+  "config": {
+    "commitizen": {
+      "path": "zz-commander-tools/lib/config/commitizen.config"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "commander-tools run lint --staged",
+      "commit-msg": "commander-tools run commitlint"
+    }
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.10.4",
+    "@babel/plugin-proposal-decorators": "^7.10.5",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.5.0",
+    "eslint-plugin-html": "^6.0.2",
+    "husky": "^4.2.5",
+    "zz-commander-tools": "^1.0.0"
+  },
+  "peerDependencies": {},
+  "dependencies": {
+    "core-js": "^3.6.5"
+  }
+}
