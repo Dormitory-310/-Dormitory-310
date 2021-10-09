@@ -1,0 +1,20 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "noImplicitAny": false,
+        "experimentalDecorators": true,
+        "preserveConstEnums": true,
+        "outDir": "lib",
+        "declaration": true
+    },
+    "exclude": [
+        "node_modules",
+        "lib",
+        "output"
+    ],
+    "include": [
+        "src/**/*.*"
+    ]
+}

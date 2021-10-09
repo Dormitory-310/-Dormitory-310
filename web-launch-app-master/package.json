@@ -1,0 +1,40 @@
+{
+    "name": "web-launch-app",
+    "version": "2.2.8",
+    "description": "launch app from web page",
+    "main": "./lib/index.js",
+    "scripts": {
+        "tsc": "tsc",
+        "start": "http-server output",
+        "build": "webpack -w"
+    },
+    "keywords": [
+        "deeplink,scheme,universal link,applink,invoke,launch app"
+    ],
+    "author": "jawidx",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/jawidx/web-launch-app.git"
+    },
+    "bugs": {
+        "url": "https://github.com/jawidx/web-launch-app/issues"
+    },
+    "homepage": "https://github.com/jawidx/web-launch-app#readme",
+    "license": "MIT",
+    "dependencies": {},
+    "devDependencies": {
+        "@babel/core": "^7.10.4",
+        "@babel/preset-env": "^7.10.4",
+        "babel-loader": "^8.0.4",
+        "clean-webpack-plugin": "^0.1.17",
+        "css-loader": "^0.28.7",
+        "html-loader": "^0.5.1",
+        "html-webpack-plugin": "^3.2.0",
+        "http-server": "^0.11.1",
+        "less": "^2.7.3",
+        "less-loader": "^4.0.5",
+        "ts-loader": "^4.4.2",
+        "webpack": "^4.43.0",
+        "webpack-cli": "^3.3.12"
+    }
+}
